@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import DashboardLayout from "../layouts/DashboardLayout";
+import ProductDetails from "../pages/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -14,8 +16,14 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        // loader: () =>
-        //   fetch("https://stride-final-project-server.vercel.app/shoes"),
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetails />,
+        loader: ({ params }) =>
+          fetch(
+            `http://localhost:5000/products/${params.id}`
+          ),
       },
       {
         path: "/login",
@@ -27,9 +35,9 @@ export const router = createBrowserRouter([
       },
     ],
   },
-//   {
-//     path: "dashboard",
-//     element: <DashboardLayout />,
-//     errorElement: <ErrorPage />,
-//   },
+  {
+    path: "dashboard",
+    element: <DashboardLayout />,
+    errorElement: <ErrorPage />,
+  },
 ]);
