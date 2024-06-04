@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .available_brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-left: 0;
+  }
+  .card_items {
+    width: 180px;
+  }
+}

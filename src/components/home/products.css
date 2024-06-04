@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+    .home_products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home_products_img {
+        width: 360px;
+    }
+    .product_details {
+        padding: 0 30px;
+    }
+    .all_product_section{
+        margin-left: -50px;
+    }
+    .all_product_buttons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .d_layout_section {
+        padding: 0%;
+    }
+    .d_layout_text {
+        font-size: x-small;
+    }
+    .dashboard_header_section{
+        display: flex;
+        gap: 20px;
+    }
+    .dashboard_header {
+        font-size: 30px;
+    }
+  }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 import { Link } from "react-router-dom";
+import "./../components/home/products.css";
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -15,8 +16,8 @@ const Dashboard = () => {
   console.log(userInfo);
   return (
     <div>
-      <div className="flex justify-between mb-7">
-        <h1 className="text-4xl">Profile Information</h1>
+      <div className="flex justify-between mb-7 dashboard_header_section">
+        <h1 className="text-4xl dashboard_header">Profile Information</h1>
         <Link
           to={`/dashboard/profile/edit/${userInfo?._id}`}
           className="btn bg-lime-500 btn-md"

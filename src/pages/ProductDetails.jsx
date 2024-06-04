@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import './../components/home/products.css';
 
 const ProductDetails = () => {
   const products = useLoaderData();
@@ -7,7 +8,7 @@ const ProductDetails = () => {
 
   return (
     <div className="flex align-middle justify-center my-11">
-      <div className="w-[500px]">
+      <div className="w-[500px] product_details">
         <h1 className="text-5xl text-center font-bold">{title}</h1>
 
         <img className="h-[500px] my-3" src={image_url} alt="product image" />

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import "./../../components/home/products.css";
 
 // eslint-disable-next-line react/prop-types
 const SingleProductCardDashboard = ({ product, onDelete }) => {
@@ -23,7 +24,7 @@ const SingleProductCardDashboard = ({ product, onDelete }) => {
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl all_product_section">
       <figure>
         <img src={image_url} alt="Shoes" />
       </figure>
@@ -32,7 +33,7 @@ const SingleProductCardDashboard = ({ product, onDelete }) => {
         <h3 className="text-xl font-semibold">{brand}</h3>
         <h3 className="text-xl font-semibold">{price}</h3>
         <p>{description}</p>
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end all_product_buttons">
           <button className="btn bg-lime-500 text-black">
             <Link to={`/products/${_id}`}>See details</Link>
           </button>
