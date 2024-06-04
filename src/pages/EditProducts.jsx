@@ -26,7 +26,7 @@ const EditProducts = () => {
     const data = { title, brand, price, description, image_url };
 
     await fetch(
-      `http://localhost:5000/products/${product._id}`,
+      `https://cric-expo-server1.onrender.com/products/${product._id}`,
       {
         method: "PATCH",
         headers: {

@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
         element: <ProductDetails />,
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/products/${params.id}`
+            `https://cric-expo-server1.onrender.com/products/${params.id}`
           ),
       },
       {
@@ -81,7 +81,7 @@ export const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/products/${params.id}`
+            `https://cric-expo-server1.onrender.com/products/${params.id}`
           ),
       },
       {
@@ -101,7 +101,7 @@ export const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/user/get/${params.id}`
+            `https://cric-expo-server1.onrender.com/user/get/${params.id}`
           ),
       },
     ]

@@ -14,7 +14,7 @@ const AddProducts = () => {
 
     const data = { title, brand, price, description, image_url };
 
-    await fetch("http://localhost:5000/products", {
+    await fetch("https://cric-expo-server1.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

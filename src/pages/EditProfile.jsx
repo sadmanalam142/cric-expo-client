@@ -20,7 +20,7 @@ export default function EditProfile() {
     };
 
     fetch(
-      `http://localhost:5000/user/${data?.email}`,
+      `https://cric-expo-server1.onrender.com/user/${data?.email}`,
       {
         method: "PATCH",
         headers: {

@@ -9,7 +9,7 @@ const SingleProductCardDashboard = ({ product, onDelete }) => {
   const { _id, title, brand, price, description, image_url } = product;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/products/${_id}`, {
+    await fetch(`https://cric-expo-server1.onrender.com/products/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
