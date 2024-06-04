@@ -7,7 +7,7 @@ const Products = () => {
         <div>
       <h1 className="my-8 text-3xl font-bold text-center">Our Products</h1>
 
-      <div className="flex gap-2 px-6 justify-center items-center ">
+      <div className="flex gap-2 px-6 justify-center items-center">
         {
           // eslint-disable-next-line react/prop-types
           products.slice(0, 3).map((product) => (
