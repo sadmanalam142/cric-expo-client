@@ -12,6 +12,8 @@ import AllProducts from "../pages/AllProducts";
 import EditProducts from "../pages/EditProducts";
 import AddProducts from "../pages/AddProducts";
 import EditProfile from "../pages/EditProfile";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
           fetch(
             `http://localhost:5000/products/${params.id}`
           ),
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "/login",
