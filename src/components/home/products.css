@@ -103,4 +103,7 @@
     .dashboard_header {
         font-size: 30px;
     }
+    .auth_section {
+        margin-left: 10px;
+      }
   }
