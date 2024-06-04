@@ -11,6 +11,8 @@ Currently, two official plugins are available:
 
 * First clone it
 * Then run the command npm i and the project is ready
+* If you want to run the project localy, you need to update firebase configaration otherwise authentication will not work
+*  Here is the live link of the project: [https://cricexpo.netlify.app/]
 
 # Project Overview:
 
