@@ -10,16 +10,31 @@ const Login = () => {
 
   const from = location?.state?.from?.pathname || "/";
 
-  const handleSUbmit = async (e) => {
+  const handleSUbmit = (e) => {
     e.preventDefault();
 
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log(email, password);
-
-    await signIn(email, password);
+    
+     signIn(email, password).then((data) => {
+      if (data?.user?.email) {
+        const userInfo = {
+          email: data?.user?.email,
+          name: name,
+        };
+        fetch("https://cric-expo-server1.onrender.com/user", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userInfo),
+        })
+          .then((res) => res.json())
+          .then((data) =>  localStorage.setItem("token", data?.token));
+      }
+    });
   };
 
   useEffect(() => {

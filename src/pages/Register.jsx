@@ -24,8 +24,6 @@ const Register = () => {
       setPassMatch(false);
     }
 
-    console.log(email, password, confirm_password);
-
     if (password === confirm_password) {
       createUser(email, password).then((data) => {
         if (data?.user?.email) {
@@ -41,7 +39,7 @@ const Register = () => {
             body: JSON.stringify(userInfo),
           })
             .then((res) => res.json())
-            .then((data) => console.log(data));
+            .then((data) =>  localStorage.setItem("token", data?.token));
         }
       });
         navigate(from);
