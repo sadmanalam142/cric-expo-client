@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   console.log(userInfo);
   return (
-    <div>
+    <div className="dashboard_section">
       <div className="flex justify-between mb-7 dashboard_header_section">
         <h1 className="text-4xl dashboard_header">Profile Information</h1>
         <Link

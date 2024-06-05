@@ -4,7 +4,7 @@ import "./../components/home/products.css";
 const DashboardLayout = () => {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-span-2 bg-gray-300 min-h-screen p-12 font-semibold d_layout_section">
+      <div className="col-span-3 bg-gray-300 min-h-screen p-12 font-semibold d_layout_section">
         <ul>
           <li className="p-4 text w-full d_layout_text">
             <Link to={"home"}>Dashboard</Link>
@@ -24,7 +24,7 @@ const DashboardLayout = () => {
           </li>
         </ul>
       </div>
-      <div className="col-span-10 p-20">
+      <div className="col-span-9 p-20 d_layout_outline">
         <Outlet />
       </div>
     </div>

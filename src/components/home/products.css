@@ -92,9 +92,16 @@
     }
     .d_layout_section {
         padding: 0%;
+        margin: 0%;
     }
     .d_layout_text {
         font-size: x-small;
+    }
+    .d_layout_outline {
+      margin-left: -30px;
+    }
+    .dashboard_section {
+      margin-left: -40px;
     }
     .dashboard_header_section{
         display: flex;
