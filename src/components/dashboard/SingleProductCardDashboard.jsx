@@ -31,7 +31,7 @@ const SingleProductCardDashboard = ({ product, onDelete }) => {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <h3 className="text-xl font-semibold">{brand}</h3>
-        <h3 className="text-xl font-semibold">{price}</h3>
+        <h3 className="text-xl font-semibold">{price} $</h3>
         <p>{description}</p>
         <div className="card-actions justify-end all_product_buttons">
           <button className="btn bg-lime-500 text-black">
