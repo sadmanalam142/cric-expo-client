@@ -13,7 +13,6 @@ const Dashboard = () => {
       .then((data) => setUserInfo(data));
   }, [user]);
 
-  console.log(userInfo);
   return (
     <div className="dashboard_section">
       <div className="flex justify-between mb-7 dashboard_header_section">

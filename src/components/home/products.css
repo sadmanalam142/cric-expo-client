@@ -72,6 +72,45 @@
     background-color: #45a049;
   }
 
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .modal-overlay {
+  position: fixed;
+  top: 200px;
+  left: 500px;
+  right: 200px;
+  bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .home_products {
         display: grid;

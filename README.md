@@ -19,3 +19,7 @@ Currently, two official plugins are available:
 * This is a cricket accessories warehouse site.
 * If a user want to read, add, update and delete a product, he must logged in to the site first.
 * Authentication is secured with jwt
+
+# Technologies used:
+
+* React, Firebase, Tailwindcss, Daisyui, React hot toast, React icons, Modal
